@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>Text writer prediction</title>
+</head>
+
+<body style="text-align: center">
+  <div style="
+        padding: 10px;
+        text-align: center;
+        background: grey;
+        color: white;
+        font-size: 15px;
+      ">
+    <h1>Text writer prediction</h1>
+  </div>
+
+  <div style="padding-top: 30px">
+    <textarea id="textarea" name="Text" rows="5" cols="80" wrap="on"></textarea>
+    <br />
+    <input id="analyse" type="button" value="Analyse" />
+    <input id="clear" type="button" value="Clear" />
+    <h2 id="totalWord"></h2>
+    <h2 id="error"></h2>
+
+    <div style="text-align: center">
+      <div style="display: inline-block">
+        <b> <p  id="language"></p> </b>
+        <p id="informal"></p>
+        <p id="formal"></p>
+          <br />
+        <b> <p  id="gender"></p> </b>
+        <p id="female"></p>
+        <p id="male"></p>
+
+      </div>
+
+
+
+      <div>
+
+        <div style="display: inline-block; padding-left: -7px">
+            <br />
+          <b> <p id="ageFormal" ></p> </b>
+          <p id="ageFormal-15-25"></p>
+          <p id="ageFormal-25-40"></p>
+          <p id="ageFormal-40-60"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        text-align: center;
+      ">
+    <p>
+    <h1>By Bader Almuhanna</h1>
+    </p>
+    <p>
+    <h1>Supervisor: Dr Julian Rathke</h1>
+    </p>
+    <h3>University of Southampton</h3>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
